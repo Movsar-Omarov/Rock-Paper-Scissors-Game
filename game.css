@@ -1,0 +1,148 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background-color: #333;
+  display: grid;
+  justify-items: center;
+}
+
+#title-header {
+  width: 100%;
+  background-color: white;
+  padding: 2em;
+  text-align: center;
+}
+
+h1 {
+  text-transform: capitalize;
+  color: black;
+}
+
+main {
+  margin-top: 1.5em;
+  width: 100%;
+}
+
+article {
+  display: grid;
+  justify-items: center;
+}
+
+#result-block {
+  position: relative;
+  border: 1px solid white;
+  width: 40vw;
+  text-align: center;
+  padding: 0.5em 0;
+  font-size: 2em;
+  border-radius: 0.1em;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+}
+
+#result-block::after {
+  content: "comp";
+  right: -1.5em;
+}
+
+#result-block::before {
+  content: "user";
+  left: -1.3em;
+}
+
+#result-block::before,
+#result-block::after {
+  position: absolute;
+  font-size: 0.4em;
+  background-color: tomato;
+  padding: 0.2em 0.3em;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+section:nth-of-type(2) {
+  display: grid;
+  justify-items: center;
+}
+
+section header {
+  margin-top: 1em;
+  text-align: center;
+}
+
+h2::first-letter {
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+  width: 60vw;
+}
+
+li {
+  background-color: white;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 5em;
+  height: 5em;
+  display: grid;
+  place-items: center;
+}
+
+button {
+  border: none;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+}
+
+li button {
+  background: none;
+  width: 4em;
+  height: 4em;
+}
+
+img {
+  width: 90%;
+  height: 90%;
+}
+
+footer {
+  display: grid;
+}
+
+#reset-button {
+  color: black;
+  margin-top: 2em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  background: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  -moz-border-radius: 0.3em;
+  -ms-border-radius: 0.3em;
+  -o-border-radius: 0.3em;
+}

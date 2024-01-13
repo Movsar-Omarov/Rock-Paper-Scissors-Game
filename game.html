@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="" />
+    <link rel="stylesheet" href="game.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="title-header">
+      <h1>rock paper scissors</h1>
+    </header>
+    <main>
+      <article>
+        <section id="result-block">
+          <span id="user-wins">0</span>:<span id="computer-wins">0</span>
+        </section>
+        <section>
+          <header><h2 id="h2"></h2></header>
+          <ul>
+            <li>
+              <button id="paper-button" data-move="paper">
+                <img src="Icons/hand_paper_icon_194460.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button id="rock-button" data-move="rock">
+                <img src="Icons/hand_rock_icon_194408.svg" alt="" />
+              </button>
+            </li>
+            <li>
+              <button id="scissors-button" data-move="scissors">
+                <img src="Icons/hand_scissors_icon_194407.svg" alt="" />
+              </button>
+            </li>
+          </ul>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <h4>Make your move.</h4>
+      <button type="reset" id="reset-button">Start</button>
+    </footer>
+  </body>
+  <script src="game.js"></script>
+</html>
